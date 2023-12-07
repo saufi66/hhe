@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: url("background.jpg") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+}
+.container {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin: 100px auto;
+    font: 700 15px/45px poppins, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 5px rgba(255, 255, 255, 0.24);
+    text-align: center;
+    width: 100%;
+
+}
+.judul {
+    animation: judul 10s ease-in-out forwards;
+    position: absolute;
+    top: 30%;
+    opacity: 1;
+}
+@keyframes judul {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+audio {
+    animation: audio 10s ease-in-out forwards;
+    position: absolute;
+    top: 50%;
+    opacity: 1;
+    z-index: 999;
+}
+@keyframes audio {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.text {
+    opacity: 0;
+    position: absolute;
+    animation: text 15s ease-in-out 11s forwards;
+}
+@keyframes text {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.a {
+    opacity: 0;
+    position: absolute;
+    animation: texta 12s ease-in-out 26s forwards;
+}
+@keyframes texta {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.b {
+    opacity: 0;
+    position: absolute;
+    animation: textb 20s ease-in-out 38s forwards;
+}
+@keyframes textb {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.c {
+    opacity: 0;
+    position: absolute;
+    animation: textc 15s ease-in-out 58s forwards;
+}
+@keyframes textc {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.d {
+    opacity: 0;
+    position: absolute;
+    animation: textd 13s ease-in-out 73s forwards;
+}
+@keyframes textd {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.e {
+    opacity: 0;
+    position: absolute;
+    animation: texte 10s ease-in-out 86s forwards;
+}
+@keyframes texte {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.f {
+    opacity: 0;
+    position: absolute;
+    animation: textf 24s ease-in-out 96s forwards;
+}
+@keyframes textf {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.g {
+    opacity: 0;
+    position: absolute;
+    animation: textg 15s ease-in-out 120s forwards;
+}
+@keyframes textg {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.h {
+    opacity: 0;
+    position: absolute;
+    animation: texth 27s ease-in-out 135s forwards;
+}
+@keyframes texth {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.i {
+    opacity: 0;
+    position: absolute;
+    animation: texti 15s ease-in-out 162s forwards;
+}
+@keyframes texti {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.j {
+    opacity: 0;
+    position: absolute;
+    animation: textj 15s ease-in-out 172s forwards;
+}
+@keyframes textj {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.k {
+    opacity: 0;
+    position: absolute;
+    animation: textk 28s ease-in-out 187s forwards;
+}
+@keyframes textk {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.l {
+    opacity: 0;
+    position: absolute;
+    animation: textl 30s ease-in-out 215s forwards;
+}
+@keyframes textl {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.m {
+    opacity: 0;
+    position: absolute;
+    animation: textm 40s ease-in-out 245s forwards;
+}
+@keyframes textm {
+    1% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
