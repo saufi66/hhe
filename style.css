@@ -306,7 +306,7 @@ audio {
 .i {
     opacity: 0;
     position: absolute;
-    animation: texti 19s ease-in-out 158s forwards;
+    animation: texti 13s ease-in-out 160s forwards;
 }
 @keyframes texti {
     1% {
