@@ -329,7 +329,7 @@ audio {
 .j {
     opacity: 0;
     position: absolute;
-    animation: textj 15s ease-in-out 172s forwards;
+    animation: textj 15s ease-in-out 175s forwards;
 }
 @keyframes textj {
     1% {
@@ -354,7 +354,7 @@ audio {
 .k {
     opacity: 0;
     position: absolute;
-    animation: textk 28s ease-in-out 187s forwards;
+    animation: textk 28s ease-in-out 190s forwards;
 }
 @keyframes textk {
     1% {
@@ -379,7 +379,7 @@ audio {
 .l {
     opacity: 0;
     position: absolute;
-    animation: textl 30s ease-in-out 215s forwards;
+    animation: textl 30s ease-in-out 218s forwards;
 }
 @keyframes textl {
     1% {
@@ -404,7 +404,7 @@ audio {
 .m {
     opacity: 0;
     position: absolute;
-    animation: textm 40s ease-in-out 245s forwards;
+    animation: textm 40s ease-in-out 248s forwards;
 }
 @keyframes textm {
     1% {
