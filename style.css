@@ -430,7 +430,7 @@ audio {
 }
 @media only screen and (max-width: 600px) {
     body {
-        background:  url("background.jpg") no-repeat fixed;
+        background: url("background.jpg") no-repeat fixed;
         background-size: cover;
         background-position: -600px;
     }
