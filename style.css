@@ -40,6 +40,8 @@ section {
     align-items: center;
 }
 header {
+  width: 90%;
+  height: 90%;
   position: relative;
   overflow: hidden;
 }
