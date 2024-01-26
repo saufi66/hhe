@@ -39,6 +39,10 @@ section {
     justify-content: center;
     align-items: center;
 }
+header {
+  position: relative;
+  overflow: hidden;
+}
 .text {
   font: normal 1em var(--font);
   color: var(--c);
