@@ -1,437 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
 * {
-    padding: 0;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --b: linear-gradient(
+      to right,
+      rgba(255, 0, 136, 0.301),
+      rgba(50, 50, 50, 0.3)
+    ),
+    url(background.jpg) no-repeat fixed center;
+    --font: 'Noto Sans', sans-serif;
+  --c: rgb(255, 255, 255);
+  --button: rgba(27, 27, 27, 0.2);
 }
 body {
-    background: url("background.jpg") no-repeat fixed;
-    background-size: cover;
-    width: 100%;
-}
-.container {
     position: relative;
-    width: 90%;
+  background: var(--b);
+  filter: brightness(140%);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+ animation: awan  30s 0.5s ease-in-out forwards alternate-reverse infinite;
+
+}
+@keyframes awan {
+    100% {
+        background-position: 0.01em;
+    }
+}
+
+section {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 120px ;
-    height: 400px;
-    margin: 100px auto;
-    font: 700 15px/45px verdana, sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 5px rgba(255, 255, 255, 0.24);
-    text-align: center;
-    width: 100%;
-    overflow: hidden;
-
-}
-.judul {
-    animation: judul 10s ease-in-out forwards;
-    position: absolute;
-    top: 30%;
-    opacity: 1;
-}
-@keyframes judul {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-audio {
-    animation: audio 10s ease-in-out forwards;
-    position: absolute;
-    top: 50%;
-    opacity: 1;
-    z-index: 999;
-}
-@keyframes audio {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+    align-items: center;
 }
 .text {
-    opacity: 0;
-    position: absolute;
-    animation: text 15s ease-in-out 11s forwards;
+  font: normal 1em var(--font);
+  color: var(--c);
+  text-transform: capitalize;
 }
-@keyframes text {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
+header button {
+    font: bold 0.7em var(--font);
+    color: var(--c);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    background: var(--button);
+    margin: 10px 5px;
+    transition: all 0.3s;
+}
+header button:active {
+    background: rgb(48, 48, 48);
+    transform: scale(0.9);
+}
+header .loading {
+    display: none;
+    background: #fff;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s;
+    animation: load 8s linear forwards;
+}
+@keyframes load {
     100% {
-        opacity: 0;
+        width: 100%;
     }
 }
-.a {
-    opacity: 0;
-    position: absolute;
-    animation: texta 12s ease-in-out 26s forwards;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@keyframes texta {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.b {
-    opacity: 0;
-    position: absolute;
-    animation: textb 20s ease-in-out 38s forwards;
-}
-@keyframes textb {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.c {
-    opacity: 0;
-    position: absolute;
-    animation: textc 15s ease-in-out 58s forwards;
-}
-@keyframes textc {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.d {
-    opacity: 0;
-    position: absolute;
-    animation: textd 13s ease-in-out 73s forwards;
-}
-@keyframes textd {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.e {
-    opacity: 0;
-    position: absolute;
-    animation: texte 10s ease-in-out 86s forwards;
-}
-@keyframes texte {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-.f {
-    opacity: 0;
-    position: absolute;
-    animation: textf 24s ease-in-out 96s forwards;
-}
-@keyframes textf {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.g {
-    opacity: 0;
-    position: absolute;
-    animation: textg 15s ease-in-out 120s forwards;
-}
-@keyframes textg {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.h {
-    opacity: 0;
-    position: absolute;
-    animation: texth 27s ease-in-out 135s forwards;
-}
-@keyframes texth {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.i {
-    opacity: 0;
-    position: absolute;
-    animation: texti 13s ease-in-out 160s forwards;
-}
-@keyframes texti {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.j {
-    opacity: 0;
-    position: absolute;
-    animation: textj 15s ease-in-out 177s forwards;
-}
-@keyframes textj {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.k {
-    opacity: 0;
-    position: absolute;
-    animation: textk 28s ease-in-out 192s forwards;
-}
-@keyframes textk {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.l {
-    opacity: 0;
-    position: absolute;
-    animation: textl 30s ease-in-out 220s forwards;
-}
-@keyframes textl {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-.m {
-    opacity: 0;
-    position: absolute;
-    animation: textm 40s ease-in-out 250s forwards;
-}
-@keyframes textm {
-    1% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@media only screen and (max-width: 600px) {
-    body {
-        background: url("background.jpg") no-repeat fixed;
-        background-size: cover;
-        background-position: -600px;
-    }
+main .txt {
+    font: normal 0.9em var(--font);
+    color: var(--c);
 }
